@@ -11,6 +11,6 @@
     <title>Spring Boot JSP</title>
 </head>
 <body>
-<h2> Hello Spring Boot JSP</h2>
+<h2> 포스팅</h2>
 </body>
 </html>
