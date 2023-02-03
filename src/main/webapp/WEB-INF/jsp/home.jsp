@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
 <html xmlns:c="">
 <head>
     <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <style>
@@ -38,6 +40,7 @@
                             <td><c:out value="${post.nickname}"/></td>
                             <td><a href="/post/view/${post.id}"><c:out value="${post.title}"/></a></td>
                             <td><a href="javascript:remove(${post.id})"><b>삭제</b></a></td>
+                            <td><a href="/update/post/${post.id}"><b>수정</b></a></td>
                         </tr>
                     </c:forEach></td>
             </tbody>
@@ -45,4 +48,4 @@
     </div>
 </body>
 </html>
-<script type="script" src=""></script>
+<script type="text/javascript" src="/js/post.js"></script>

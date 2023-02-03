@@ -1,16 +1,41 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: FOODNAMOO
-  Date: 2023-02-03
-  Time: 오후 5:57
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>게시글 수정하기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+
+    .layout {
+        width : 500px;
+        margin : 0 auto;
+        margin-top : 40px;
+    }
+
+</style>
+
+<body>
+<h1>
+    게시글 수정
+</h1>
+<form id="postUpdate" action="/" onsubmit="update(${post.id},${post})">
+    <table>
+        <tr>
+            <td>닉네임</td>
+            <td><input type="text" name="nickname" value="${post.nickname}" required="required"></td>
+        </tr>
+        <tr>
+            <td>제목</td>
+            <td><input type="text" name="title" value="${post.title}" required="required"></td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td><input type="text" name="content" value="${post.content}" required="required"></td>
+        </tr>
+    </table>
+    <input type="submit" value="수정하기">
+</form>
+</body>
 </html>
+<script type="text/javascript" src="/js/post.js"></script>

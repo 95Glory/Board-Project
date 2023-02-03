@@ -29,15 +29,15 @@
     <table>
         <tr>
             <td>닉네임</td>
-            <td><input type="text" name="nickname"></td>
+            <td><input type="text" name="nickname" required="required"></td>
         </tr>
         <tr>
             <td>제목</td>
-            <td><input type="text" name="title"></td>
+            <td><input type="text" name="title" required="required"></td>
         </tr>
         <tr>
             <td>내용</td>
-            <td><input type="text" name="content"></td>
+            <td><input type="text" name="content" required="required"></td>
         </tr>
     </table>
         <input type="submit" value="작성하기">

@@ -7,11 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Builder
 @Entity
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@Builder
 public class Board {
 
     @Id
