@@ -19,7 +19,7 @@
 <h1>
     게시글 수정
 </h1>
-<form id="postUpdate" action="/" onsubmit="update(${post.id},${post})">
+<form id="postUpdate" onsubmit="update(${post.id})">
     <table>
         <tr>
             <td>닉네임</td>

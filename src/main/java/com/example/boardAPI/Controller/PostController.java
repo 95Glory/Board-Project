@@ -43,9 +43,7 @@ public class PostController {
     //게시글 수정
     @GetMapping("/update/post/{id}")
     public String update(@PathVariable int id,Model model){
-        System.out.println("Controller에서 받은 id : " + id);
         Board post = postService.postView(id);
-        System.out.println("Controller에서 받은 id로 찾아낸 post : " + post);
         model.addAttribute("post",post);
         return "update";
     }

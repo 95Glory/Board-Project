@@ -13,19 +13,18 @@ function remove(id) {
 }
 
 // 게시글 수정
-function update(id,post) {
+function update(id) {
     event.preventDefault();
     let data = $("#postUpdate").serialize();
     console.log(data);
-    console.log(post);
     console.log(id);
 
     $.ajax({
-        type: "put",
-        url: "/update/${id}",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(post),
-        dataType: "json"
+        url: `/update/${id}`,
+        type:'put',
+        data:JSON.stringify(data),
+        dataType: "json",
+        contentType:'application/json;charset=UTF-8'
     }).done(res => {
         alert("수정 성공하였습니다!")
         console.log("성공");
