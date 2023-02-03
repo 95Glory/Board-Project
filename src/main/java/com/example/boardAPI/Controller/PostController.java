@@ -8,7 +8,6 @@ public class PostController {
 
     @GetMapping("/post")
     public String posting(){
-        return "boardposting";
+        return "posting";
     }
-
 }
